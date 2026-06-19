@@ -93,7 +93,7 @@ app.use("/api/bill", billRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/payment", paymentRoutes);
 
-app.get("/api/health", (req, res) => {
+app.get("/", (req, res) => {
   res.json({
     success: true,
     message: "SmartBizz server running"
