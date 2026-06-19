@@ -100,4 +100,11 @@ app.get("/api/health", (req, res) => {
   });
 });
 
+
+app.get("/", (req, res) => {
+  res.json({
+    message: "Backend is running"
+  });
+});
+
 module.exports = app;
