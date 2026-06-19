@@ -39,7 +39,7 @@ app.use("/uploads",          express.static(path.join(__dirname, "uploads")))
 app.use("/uploads/products", express.static(path.join(__dirname, "uploads", "products")))
 
 // ✅ Test route — open http://localhost:5000/api/health to confirm server works
-app.get("/api/health", (req, res) => {
+app.get("/", (req, res) => {
   res.json({ success: true, message: "SmartBizz server is running ✅" })
 })
 
