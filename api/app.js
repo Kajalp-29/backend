@@ -63,7 +63,7 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
-
+const serverless = require("serverless-http");
 const connectDB = require("../db");
 connectDB();
 
